@@ -1,2 +1,3 @@
-/* Compatibility entry point — the complete shared shell now lives in shell.css */
+/* Shared shell and refinement layer for all internal pages */
 @import url('./shell.css');
+@import url('./refinement.css');
