@@ -39,9 +39,12 @@ function backToTop(){
 }
 function contactLayout(){
  if(file!=='contact.html')return;
- var expect=document.querySelector('.contact-page .expect');
- var form=document.querySelector('.contact-page #contactForm');
+ var page=document.querySelector('.contact-page');
+ var expect=page&&page.querySelector('.expect');
+ var form=page&&page.querySelector('#contactForm');
+ var faq=page&&page.querySelector('.faq');
  if(expect&&form){form.parentNode.insertBefore(expect,form.nextSibling);expect.style.marginTop='14px'}
+ if(faq&&expect){expect.parentNode.insertBefore(faq,expect.nextSibling);faq.style.marginTop='16px'}
 }
 function shell(){
  document.querySelectorAll('header.header,.mobile-drawer,.drawer-backdrop,footer.footer').forEach(function(e){e.remove()});
