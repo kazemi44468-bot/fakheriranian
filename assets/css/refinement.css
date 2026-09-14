@@ -14,3 +14,14 @@ html{scroll-padding-top:92px}.page,.content{position:relative}
 .to-top{position:fixed;right:24px;bottom:24px;width:50px;height:50px;border:1px solid rgba(164,124,69,.55);border-radius:50% 50% 8px 50%;background:rgba(255,253,248,.94);color:#8d6737;display:flex;align-items:center;justify-content:center;font:24px/1 Tahoma,sans-serif;box-shadow:0 12px 30px rgba(41,40,39,.16);cursor:pointer;z-index:9999;opacity:0;visibility:hidden;transform:translateY(12px);transition:opacity .25s,visibility .25s,transform .25s,background .25s}.to-top span{display:block;transform:translateY(-1px)}.to-top.show{opacity:1;visibility:visible;transform:translateY(0)}.to-top:hover{background:#a47c45;color:#fff;transform:translateY(-3px)}
 @media(max-width:900px){.header .brand img{width:98px;height:98px}.header.scrolled .brand img{width:66px;height:66px}.page-hero{grid-template-columns:1fr}.page-hero-visual{min-height:270px}.footer{min-height:335px;margin-top:35px}.footer-inner{min-height:335px}.footer-inner img{width:325px!important;height:245px!important}.to-top{right:17px;bottom:18px;width:46px;height:46px}}
 @media(max-width:680px){.header .brand img{width:88px;height:88px}.header.scrolled .brand img{width:60px;height:60px}.section:before{inset:15px 4%}.section-head:after{display:none}.page-hero{padding:55px 0 35px}.page-hero .panel{padding:28px 22px;min-height:190px}.page-hero .panel h2{font-size:36px}.card{padding:25px 21px}.btn{min-height:48px;padding:0 21px}.actions{gap:9px}.footer-inner img{width:290px!important;height:220px!important}.footer-inner{min-height:315px;padding-top:18px}.footer{min-height:315px}.footer-quote{font-size:30px!important}.to-top{right:14px;bottom:14px;width:44px;height:44px}}
+/* Order page typography refinement */
+.order-page .order-copy h1{font-size:clamp(2rem,3.2vw,3rem);line-height:1.38}
+.order-page .learning-head p{font-size:.92rem;line-height:2.05}
+.order-page .guide-number{font-size:.78rem}
+.order-page .guide-card h3{font-size:1.04rem;line-height:1.7}
+.order-page .guide-card p{font-size:.88rem;line-height:2.05}
+.order-page .measure-guide h3{font-size:1.08rem;line-height:1.7}
+.order-page .measure-tip strong{font-size:.88rem}
+.order-page .measure-tip span{font-size:.82rem;line-height:1.95}
+.order-page .guide-note{font-size:.82rem;line-height:2.05}
+@media(max-width:620px){.order-page .order-copy h1{font-size:clamp(1.75rem,7vw,2.25rem);line-height:1.45}.order-page .learning-head p{font-size:.88rem}.order-page .guide-card p{font-size:.86rem}.order-page .measure-tip span{font-size:.8rem}.order-page .guide-note{font-size:.8rem}}
