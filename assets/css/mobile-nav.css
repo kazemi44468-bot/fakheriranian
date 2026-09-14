@@ -1,3 +1,4 @@
-/* Shared shell and refinement layer for all internal pages */
+/* Shared shell, refinement and final precision layer for all internal pages */
 @import url('./shell.css');
 @import url('./refinement.css');
+@import url('./fix.css');
