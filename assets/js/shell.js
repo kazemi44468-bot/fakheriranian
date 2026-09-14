@@ -37,6 +37,12 @@ function backToTop(){
  function update(){t.classList.toggle('show',window.scrollY>420)}
  t.onclick=function(){window.scrollTo({top:0,behavior:'smooth'})};window.addEventListener('scroll',update,{passive:true});update();
 }
+function contactLayout(){
+ if(file!=='contact.html')return;
+ var expect=document.querySelector('.contact-page .expect');
+ var form=document.querySelector('.contact-page #contactForm');
+ if(expect&&form){form.parentNode.insertBefore(expect,form.nextSibling);expect.style.marginTop='14px'}
+}
 function shell(){
  document.querySelectorAll('header.header,.mobile-drawer,.drawer-backdrop,footer.footer').forEach(function(e){e.remove()});
  var h=document.createElement('header');h.className='header';h.innerHTML='<div class="header-inner"><nav class="nav right">'+nav(0,3)+'</nav><a class="brand" href="'+href('index.html')+'" aria-label="گروه پوشاک فاخر ایرانیان"><img src="'+href('assets/images/logo.png')+'" alt="گروه پوشاک فاخر ایرانیان"></a><nav class="nav left">'+nav(3,6)+'</nav><button class="mobile-trigger" type="button" aria-label="منوی موبایل" aria-expanded="false"><span></span><span></span></button></div>';
@@ -45,7 +51,7 @@ function shell(){
  var b=document.createElement('div');b.className='drawer-backdrop';b.id='drawerBackdrop';document.body.appendChild(b);
  var f=document.createElement('footer');f.className='footer';f.innerHTML='<div class="footer-inner"><img src="'+href('assets/images/logo.png')+'" alt="گروه پوشاک فاخر ایرانیان"><div class="footer-quote">«فاخر بپوشید؛ اصالت، از جزئیات آغاز می‌شود.»</div><p>گروه پوشاک فاخر ایرانیان</p></div>';document.body.appendChild(f);
  var t=h.querySelector('.mobile-trigger');function toggle(force){var open=force===undefined?!d.classList.contains('open'):force;d.classList.toggle('open',open);b.classList.toggle('open',open);document.body.classList.toggle('drawer-open',open);t.setAttribute('aria-expanded',open?'true':'false');}t.onclick=function(){toggle()};d.querySelector('.drawer-close').onclick=function(){toggle(false)};b.onclick=function(){toggle(false)};d.querySelectorAll('a').forEach(function(a){a.onclick=function(){toggle(false)}});window.addEventListener('scroll',function(){h.classList.toggle('scrolled',scrollY>25)},{passive:true});
- backToTop();gallery();localizeNumbers();
+ backToTop();gallery();contactLayout();localizeNumbers();
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',shell);else shell();
 })();
