@@ -1,7 +1,7 @@
 @import url('https://raw.githubusercontent.com/kazemi44468-bot/fakheriranian/a701864b020cd4eca9a48ff4d79723a58a35c1b8/assets/css/refinement.css');
 /* FAKHER — selected collection editorial imagery */
 .collection .fashion-card{position:relative!important;overflow:hidden!important;background:#171513!important;isolation:isolate}
-.collection .fashion-card .mannequin{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;margin:0!important;background-size:cover!important;background-position:center!important;background-repeat:no-repeat!important;transform:scale(1.01)!important;transition:transform .8s ease,filter .8s ease!important;z-index:0!important}
+.collection .fashion-card .mannequin{display:block!important;position:absolute!important;inset:0!important;width:100%!important;height:100%!important;margin:0!important;background-size:cover!important;background-position:center!important;background-repeat:no-repeat!important;transform:scale(1.01)!important;transition:transform .8s ease,filter .8s ease!important;z-index:0!important}
 .collection .fashion-card .mannequin:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.04) 25%,rgba(0,0,0,.66) 100%);z-index:1}
 .collection .fashion-card:nth-child(1) .mannequin{background-image:url('https://assets.theedgemarkets.com/Giorgio-Armani-BC09052024_img1_tem.jpg')!important;background-position:center 28%!important}
 .collection .fashion-card:nth-child(2) .mannequin{background-image:url('https://consiglieri.ro/cdn/shop/products/costum-ceremony-luxuryzegna-black-tie.jpg?v=1767881339&width=1640')!important;background-position:center 25%!important}
